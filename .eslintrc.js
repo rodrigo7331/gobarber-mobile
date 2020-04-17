@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: ["react", "jsx-a11y", "react-hooks"],
   rules: {
+    "react/jsx-props-no-spreading": "off",
     "prettier/prettier": "off",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
     "import/prefer-default-export": "off",

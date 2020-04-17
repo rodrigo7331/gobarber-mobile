@@ -11,18 +11,18 @@ const Stack = createStackNavigator();
 function Routes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Main"
-        screenOptions={{
-          headerTitleAlign: 'center',
-          headerStyle: { backgroundColor: 'pink' },
-          headerTintColor: '#fff',
-        }}
-      >
+        <Stack.Navigator
+          initialRouteName="SignIn"
+        >
         <Stack.Screen
           name="SignIn"
           component={SignIn}
-          options={{ title: 'Main', headerTitleAlign: 'left' }}
+          options={{ title: 'SignIn' }}
+        />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUp}
+          options={{ title: 'SignUp' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
